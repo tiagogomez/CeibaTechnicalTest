@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostDataCellId" rowHeight="137" id="Fq2-bp-fpF" customClass="PostCellView" customModule="CeibaTechnicalTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fq2-bp-fpF" id="dfG-Lj-wB2">
+                <rect key="frame" x="0.0" y="0.0" width="484" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fo-8o-dOX">
+                        <rect key="frame" x="10" y="10" width="464" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Noj-ac-6fL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRF-6R-FIu">
+                        <rect key="frame" x="10" y="50" width="464" height="77"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iRF-6R-FIu" secondAttribute="trailing" constant="10" id="W6P-AD-HpV"/>
+                    <constraint firstItem="5Fo-8o-dOX" firstAttribute="top" secondItem="dfG-Lj-wB2" secondAttribute="top" constant="10" id="WpM-xk-ucU"/>
+                    <constraint firstItem="iRF-6R-FIu" firstAttribute="top" secondItem="5Fo-8o-dOX" secondAttribute="bottom" constant="15" id="j1F-3G-nW1"/>
+                    <constraint firstAttribute="bottom" secondItem="iRF-6R-FIu" secondAttribute="bottom" constant="10" id="vEr-sp-9uO"/>
+                    <constraint firstAttribute="trailing" secondItem="5Fo-8o-dOX" secondAttribute="trailing" constant="10" id="vfS-yc-Vvc"/>
+                    <constraint firstItem="5Fo-8o-dOX" firstAttribute="leading" secondItem="dfG-Lj-wB2" secondAttribute="leading" constant="10" id="xne-tu-jvg"/>
+                    <constraint firstItem="iRF-6R-FIu" firstAttribute="leading" secondItem="dfG-Lj-wB2" secondAttribute="leading" constant="10" id="y7Q-ga-Vwy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="postBody" destination="iRF-6R-FIu" id="hMX-wn-dXf"/>
+                <outlet property="postTitle" destination="5Fo-8o-dOX" id="n7B-CB-2lc"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="-51.227678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

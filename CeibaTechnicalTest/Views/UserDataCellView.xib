@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserDataCellId" rowHeight="137" id="L64-jz-VvW" customClass="UserDataCellView" customModule="CeibaTechnicalTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L64-jz-VvW" id="2iv-xe-2Yc">
+                <rect key="frame" x="0.0" y="0.0" width="484" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-RJ-jeI">
+                        <rect key="frame" x="10" y="10" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3T-XH-YJC">
+                        <rect key="frame" x="10" y="40.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-Gl-YiG">
+                        <rect key="frame" x="10" y="71" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5J-sE-sfa">
+                        <rect key="frame" x="325" y="100" width="149" height="27"/>
+                        <state key="normal" title="VER PUBLICACIONES"/>
+                        <connections>
+                            <action selector="showPostsButtonPressed:" destination="L64-jz-VvW" eventType="touchDown" id="gk7-Kr-ETl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T3T-XH-YJC" firstAttribute="leading" secondItem="2iv-xe-2Yc" secondAttribute="leading" constant="10" id="Ac2-yo-GLG"/>
+                    <constraint firstItem="ojd-RJ-jeI" firstAttribute="top" secondItem="2iv-xe-2Yc" secondAttribute="top" constant="10" id="EGW-tS-G3U"/>
+                    <constraint firstItem="NUl-Gl-YiG" firstAttribute="top" secondItem="T3T-XH-YJC" secondAttribute="bottom" constant="10" id="GFn-lg-aew"/>
+                    <constraint firstItem="NUl-Gl-YiG" firstAttribute="leading" secondItem="2iv-xe-2Yc" secondAttribute="leading" constant="10" id="LeD-pZ-rqY"/>
+                    <constraint firstItem="m5J-sE-sfa" firstAttribute="top" secondItem="2iv-xe-2Yc" secondAttribute="top" constant="100" id="gIb-Al-fhK"/>
+                    <constraint firstItem="T3T-XH-YJC" firstAttribute="top" secondItem="ojd-RJ-jeI" secondAttribute="bottom" constant="10" id="nyv-c6-woM"/>
+                    <constraint firstAttribute="bottom" secondItem="m5J-sE-sfa" secondAttribute="bottom" constant="10" id="q2m-b0-bQh"/>
+                    <constraint firstAttribute="trailing" secondItem="m5J-sE-sfa" secondAttribute="trailing" constant="10" id="t8L-jB-8bH"/>
+                    <constraint firstItem="ojd-RJ-jeI" firstAttribute="leading" secondItem="2iv-xe-2Yc" secondAttribute="leading" constant="10" id="yd4-4u-yLu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="showPostsButton" destination="m5J-sE-sfa" id="FGa-Zf-K7e"/>
+                <outlet property="userEmail" destination="NUl-Gl-YiG" id="F3D-Mn-UeF"/>
+                <outlet property="userName" destination="ojd-RJ-jeI" id="ZqA-IE-qPP"/>
+                <outlet property="userPhone" destination="T3T-XH-YJC" id="QYB-3j-xXC"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="-51.227678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
