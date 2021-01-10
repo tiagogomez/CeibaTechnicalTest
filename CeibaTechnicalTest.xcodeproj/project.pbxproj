@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		19ED597425AA049F0047BBF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED597325AA049F0047BBF9 /* AppDelegate.swift */; };
 		19ED597625AA049F0047BBF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED597525AA049F0047BBF9 /* SceneDelegate.swift */; };
-		19ED597825AA049F0047BBF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED597725AA049F0047BBF9 /* ViewController.swift */; };
+		19ED597825AA049F0047BBF9 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED597725AA049F0047BBF9 /* UsersViewController.swift */; };
 		19ED597B25AA049F0047BBF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19ED597925AA049F0047BBF9 /* Main.storyboard */; };
 		19ED597E25AA049F0047BBF9 /* CeibaTechnicalTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19ED597C25AA049F0047BBF9 /* CeibaTechnicalTest.xcdatamodeld */; };
 		19ED598025AA04A30047BBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19ED597F25AA04A30047BBF9 /* Assets.xcassets */; };
 		19ED598325AA04A30047BBF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19ED598125AA04A30047BBF9 /* LaunchScreen.storyboard */; };
-		19ED598E25AA04A30047BBF9 /* CeibaTechnicalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED598D25AA04A30047BBF9 /* CeibaTechnicalTestTests.swift */; };
 		19ED59B125AA065D0047BBF9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED59B025AA065D0047BBF9 /* UserData.swift */; };
 		19ED59B925AA08230047BBF9 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED59B825AA08230047BBF9 /* PostData.swift */; };
 		19ED59C125AA0B660047BBF9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED59C025AA0B660047BBF9 /* APIService.swift */; };
@@ -24,17 +23,26 @@
 		19ED5A0625AA42B70047BBF9 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A0525AA42B70047BBF9 /* PostCellView.swift */; };
 		19ED5A0B25AA42C40047BBF9 /* PostCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19ED5A0A25AA42C40047BBF9 /* PostCellView.xib */; };
 		19ED5A1625AA54C80047BBF9 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A1525AA54C80047BBF9 /* DatabaseManager.swift */; };
+		19ED5A3325AB7C3B0047BBF9 /* UsersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A3225AB7C3B0047BBF9 /* UsersViewControllerTests.swift */; };
+		19ED5A3C25AB7D770047BBF9 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED597725AA049F0047BBF9 /* UsersViewController.swift */; };
+		19ED5A4225AB7E110047BBF9 /* DatabaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A4125AB7E110047BBF9 /* DatabaseMock.swift */; };
+		19ED5A4925AB7E210047BBF9 /* DatabaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A4125AB7E110047BBF9 /* DatabaseMock.swift */; };
+		19ED5A4E25AB7F040047BBF9 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A4D25AB7F040047BBF9 /* ServiceMock.swift */; };
+		19ED5A4F25AB7F040047BBF9 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A4D25AB7F040047BBF9 /* ServiceMock.swift */; };
+		19ED5A5425AB7F860047BBF9 /* MockUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A5325AB7F860047BBF9 /* MockUserData.swift */; };
+		19ED5A5525AB7F860047BBF9 /* MockUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A5325AB7F860047BBF9 /* MockUserData.swift */; };
+		19ED5A7025AB843A0047BBF9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED59B025AA065D0047BBF9 /* UserData.swift */; };
+		19ED5A7325AB84410047BBF9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED59C025AA0B660047BBF9 /* APIService.swift */; };
+		19ED5A7625AB84470047BBF9 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED59B825AA08230047BBF9 /* PostData.swift */; };
+		19ED5A7925AB844D0047BBF9 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A1525AA54C80047BBF9 /* DatabaseManager.swift */; };
+		19ED5A7C25AB847E0047BBF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED597325AA049F0047BBF9 /* AppDelegate.swift */; };
+		19ED5A7F25AB84840047BBF9 /* UserDataCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED59F925AA1B750047BBF9 /* UserDataCellView.swift */; };
+		19ED5A8225AB84900047BBF9 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A0025AA2C140047BBF9 /* PostsViewController.swift */; };
+		19ED5A8525AB84A20047BBF9 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A0525AA42B70047BBF9 /* PostCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		19ED598A25AA04A30047BBF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 19ED596825AA049F0047BBF9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19ED596F25AA049F0047BBF9;
-			remoteInfo = CeibaTechnicalTest;
-		};
-		19ED599525AA04A30047BBF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 19ED596825AA049F0047BBF9 /* Project object */;
 			proxyType = 1;
@@ -47,16 +55,14 @@
 		19ED597025AA049F0047BBF9 /* CeibaTechnicalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeibaTechnicalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19ED597325AA049F0047BBF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19ED597525AA049F0047BBF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19ED597725AA049F0047BBF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19ED597725AA049F0047BBF9 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		19ED597A25AA049F0047BBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19ED597D25AA049F0047BBF9 /* CeibaTechnicalTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CeibaTechnicalTest.xcdatamodel; sourceTree = "<group>"; };
 		19ED597F25AA04A30047BBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19ED598225AA04A30047BBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19ED598425AA04A30047BBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19ED598925AA04A30047BBF9 /* CeibaTechnicalTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaTechnicalTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		19ED598D25AA04A30047BBF9 /* CeibaTechnicalTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaTechnicalTestTests.swift; sourceTree = "<group>"; };
 		19ED598F25AA04A30047BBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19ED599425AA04A30047BBF9 /* CeibaTechnicalTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaTechnicalTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19ED59B025AA065D0047BBF9 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		19ED59B825AA08230047BBF9 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		19ED59C025AA0B660047BBF9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -66,6 +72,10 @@
 		19ED5A0525AA42B70047BBF9 /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
 		19ED5A0A25AA42C40047BBF9 /* PostCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCellView.xib; sourceTree = "<group>"; };
 		19ED5A1525AA54C80047BBF9 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		19ED5A3225AB7C3B0047BBF9 /* UsersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewControllerTests.swift; sourceTree = "<group>"; };
+		19ED5A4125AB7E110047BBF9 /* DatabaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseMock.swift; sourceTree = "<group>"; };
+		19ED5A4D25AB7F040047BBF9 /* ServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
+		19ED5A5325AB7F860047BBF9 /* MockUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,13 +87,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		19ED598625AA04A30047BBF9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19ED599125AA04A30047BBF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -107,7 +110,6 @@
 			children = (
 				19ED597025AA049F0047BBF9 /* CeibaTechnicalTest.app */,
 				19ED598925AA04A30047BBF9 /* CeibaTechnicalTestTests.xctest */,
-				19ED599425AA04A30047BBF9 /* CeibaTechnicalTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +117,7 @@
 		19ED597225AA049F0047BBF9 /* CeibaTechnicalTest */ = {
 			isa = PBXGroup;
 			children = (
+				19ED5A4025AB7DEE0047BBF9 /* Mocks */,
 				19ED59D525AA12120047BBF9 /* Views */,
 				19ED59AF25AA05C60047BBF9 /* Controllers */,
 				19ED59AE25AA05B20047BBF9 /* Common */,
@@ -132,7 +135,7 @@
 		19ED598C25AA04A30047BBF9 /* CeibaTechnicalTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				19ED598D25AA04A30047BBF9 /* CeibaTechnicalTestTests.swift */,
+				19ED5A3225AB7C3B0047BBF9 /* UsersViewControllerTests.swift */,
 				19ED598F25AA04A30047BBF9 /* Info.plist */,
 			);
 			path = CeibaTechnicalTestTests;
@@ -168,7 +171,7 @@
 		19ED59AF25AA05C60047BBF9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				19ED597725AA049F0047BBF9 /* ViewController.swift */,
+				19ED597725AA049F0047BBF9 /* UsersViewController.swift */,
 				19ED5A0025AA2C140047BBF9 /* PostsViewController.swift */,
 			);
 			path = Controllers;
@@ -183,6 +186,16 @@
 				19ED5A0A25AA42C40047BBF9 /* PostCellView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		19ED5A4025AB7DEE0047BBF9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				19ED5A4125AB7E110047BBF9 /* DatabaseMock.swift */,
+				19ED5A4D25AB7F040047BBF9 /* ServiceMock.swift */,
+				19ED5A5325AB7F860047BBF9 /* MockUserData.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,24 +236,6 @@
 			productReference = 19ED598925AA04A30047BBF9 /* CeibaTechnicalTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		19ED599325AA04A30047BBF9 /* CeibaTechnicalTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 19ED59A325AA04A30047BBF9 /* Build configuration list for PBXNativeTarget "CeibaTechnicalTestUITests" */;
-			buildPhases = (
-				19ED599025AA04A30047BBF9 /* Sources */,
-				19ED599125AA04A30047BBF9 /* Frameworks */,
-				19ED599225AA04A30047BBF9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				19ED599625AA04A30047BBF9 /* PBXTargetDependency */,
-			);
-			name = CeibaTechnicalTestUITests;
-			productName = CeibaTechnicalTestUITests;
-			productReference = 19ED599425AA04A30047BBF9 /* CeibaTechnicalTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,10 +249,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					19ED598825AA04A30047BBF9 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 19ED596F25AA049F0047BBF9;
-					};
-					19ED599325AA04A30047BBF9 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 19ED596F25AA049F0047BBF9;
 					};
@@ -278,7 +269,6 @@
 			targets = (
 				19ED596F25AA049F0047BBF9 /* CeibaTechnicalTest */,
 				19ED598825AA04A30047BBF9 /* CeibaTechnicalTestTests */,
-				19ED599325AA04A30047BBF9 /* CeibaTechnicalTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,13 +293,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19ED599225AA04A30047BBF9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -317,14 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19ED597825AA049F0047BBF9 /* ViewController.swift in Sources */,
+				19ED597825AA049F0047BBF9 /* UsersViewController.swift in Sources */,
 				19ED5A1625AA54C80047BBF9 /* DatabaseManager.swift in Sources */,
+				19ED5A5425AB7F860047BBF9 /* MockUserData.swift in Sources */,
 				19ED59C125AA0B660047BBF9 /* APIService.swift in Sources */,
 				19ED597425AA049F0047BBF9 /* AppDelegate.swift in Sources */,
 				19ED5A0125AA2C140047BBF9 /* PostsViewController.swift in Sources */,
+				19ED5A4E25AB7F040047BBF9 /* ServiceMock.swift in Sources */,
 				19ED597E25AA049F0047BBF9 /* CeibaTechnicalTest.xcdatamodeld in Sources */,
 				19ED59FA25AA1B750047BBF9 /* UserDataCellView.swift in Sources */,
 				19ED59B925AA08230047BBF9 /* PostData.swift in Sources */,
+				19ED5A4925AB7E210047BBF9 /* DatabaseMock.swift in Sources */,
 				19ED5A0625AA42B70047BBF9 /* PostCellView.swift in Sources */,
 				19ED59B125AA065D0047BBF9 /* UserData.swift in Sources */,
 				19ED597625AA049F0047BBF9 /* SceneDelegate.swift in Sources */,
@@ -335,14 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19ED598E25AA04A30047BBF9 /* CeibaTechnicalTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19ED599025AA04A30047BBF9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				19ED5A8525AB84A20047BBF9 /* PostCellView.swift in Sources */,
+				19ED5A7C25AB847E0047BBF9 /* AppDelegate.swift in Sources */,
+				19ED5A5525AB7F860047BBF9 /* MockUserData.swift in Sources */,
+				19ED5A7625AB84470047BBF9 /* PostData.swift in Sources */,
+				19ED5A7925AB844D0047BBF9 /* DatabaseManager.swift in Sources */,
+				19ED5A4225AB7E110047BBF9 /* DatabaseMock.swift in Sources */,
+				19ED5A7F25AB84840047BBF9 /* UserDataCellView.swift in Sources */,
+				19ED5A7025AB843A0047BBF9 /* UserData.swift in Sources */,
+				19ED5A8225AB84900047BBF9 /* PostsViewController.swift in Sources */,
+				19ED5A4F25AB7F040047BBF9 /* ServiceMock.swift in Sources */,
+				19ED5A3C25AB7D770047BBF9 /* UsersViewController.swift in Sources */,
+				19ED5A7325AB84410047BBF9 /* APIService.swift in Sources */,
+				19ED5A3325AB7C3B0047BBF9 /* UsersViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,11 +344,6 @@
 			isa = PBXTargetDependency;
 			target = 19ED596F25AA049F0047BBF9 /* CeibaTechnicalTest */;
 			targetProxy = 19ED598A25AA04A30047BBF9 /* PBXContainerItemProxy */;
-		};
-		19ED599625AA04A30047BBF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 19ED596F25AA049F0047BBF9 /* CeibaTechnicalTest */;
-			targetProxy = 19ED599525AA04A30047BBF9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -575,44 +561,6 @@
 			};
 			name = Release;
 		};
-		19ED59A425AA04A30047BBF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CeibaTechnicalTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = santiago.CeibaTechnicalTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CeibaTechnicalTest;
-			};
-			name = Debug;
-		};
-		19ED59A525AA04A30047BBF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CeibaTechnicalTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = santiago.CeibaTechnicalTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CeibaTechnicalTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -639,15 +587,6 @@
 			buildConfigurations = (
 				19ED59A125AA04A30047BBF9 /* Debug */,
 				19ED59A225AA04A30047BBF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		19ED59A325AA04A30047BBF9 /* Build configuration list for PBXNativeTarget "CeibaTechnicalTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				19ED59A425AA04A30047BBF9 /* Debug */,
-				19ED59A525AA04A30047BBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

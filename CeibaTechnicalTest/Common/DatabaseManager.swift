@@ -8,7 +8,13 @@
 import CoreData
 import UIKit
 
-class DatabaseManager {
+protocol DatabaseProtocol {
+  
+  func storeUserData(usersData: [UserData])
+  func retrieveUsersData() -> [UserData]?
+}
+
+class DatabaseManager: DatabaseProtocol {
   
   private let entityName = "UserInfo"
   private let idKey = "id"
@@ -82,6 +88,7 @@ class DatabaseManager {
                                  phone: phone,
                                  website: website))
     }
+    
     return usersData
   }
 }

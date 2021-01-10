@@ -17,14 +17,17 @@ class PostsViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
   var userData: UserData?
+  var apiService: ServiceAPIProtocol = APIService()
   
   private let spinner = UIActivityIndicatorView(style: .medium)
   private let indicatorText = UILabel()
+  private let indicatorLabelText = "Loading Posts"
+  private let indicatorLabelEmptyText = "List is empty"
   
-  fileprivate var posts: [PostData] = []
-  fileprivate let postSectionLabel = "Posts"
-  fileprivate let navigationBarHeader = "User Info"
-  fileprivate let postCellId = "PostDataCellId"
+  private var posts: [PostData] = []
+  private let postSectionLabel = "Posts"
+  private let navigationBarHeader = "User Info"
+  private let postCellId = "PostDataCellId"
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,7 +38,6 @@ class PostsViewController: UIViewController {
   }
   
   private func retrievePostsData() {
-    let apiService = APIService()
     guard let userId = userData?.id else {
       return
     }
@@ -45,6 +47,8 @@ class PostsViewController: UIViewController {
         self.tableView.reloadData()
         self.hideLoadingIndicator()
       }
+    } onError: {_ in
+      self.presentEmptyTableMessage()
     }
   }
   
@@ -56,7 +60,7 @@ class PostsViewController: UIViewController {
     spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     
-    indicatorText.text = "Loading Posts"
+    indicatorText.text = indicatorLabelText
     indicatorText.sizeToFit()
     indicatorText.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(indicatorText)
@@ -85,6 +89,11 @@ class PostsViewController: UIViewController {
     userPhone.text = userData?.phone
   }
   
+  private func presentEmptyTableMessage() {
+    tableView.isHidden = true
+    indicatorText.isHidden = false
+    indicatorText.text = indicatorLabelEmptyText
+  }
 }
 
 extension PostsViewController: UITableViewDataSource, UITableViewDelegate {
