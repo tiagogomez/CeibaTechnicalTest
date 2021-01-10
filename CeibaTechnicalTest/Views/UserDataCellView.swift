@@ -34,6 +34,7 @@ class UserDataCellView: UITableViewCell {
     userName.text = userData.name
     userPhone.text = userData.phone
     userEmail.text = userData.email
+    userName.font = UIFont(name:"HelveticaNeue-Bold", size: 20.0)
     self.delegate = delegate
     self.userData = userData
   }

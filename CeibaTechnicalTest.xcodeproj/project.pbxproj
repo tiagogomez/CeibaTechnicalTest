@@ -23,6 +23,7 @@
 		19ED5A0125AA2C140047BBF9 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A0025AA2C140047BBF9 /* PostsViewController.swift */; };
 		19ED5A0625AA42B70047BBF9 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A0525AA42B70047BBF9 /* PostCellView.swift */; };
 		19ED5A0B25AA42C40047BBF9 /* PostCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19ED5A0A25AA42C40047BBF9 /* PostCellView.xib */; };
+		19ED5A1625AA54C80047BBF9 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED5A1525AA54C80047BBF9 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		19ED5A0025AA2C140047BBF9 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		19ED5A0525AA42B70047BBF9 /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
 		19ED5A0A25AA42C40047BBF9 /* PostCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCellView.xib; sourceTree = "<group>"; };
+		19ED5A1525AA54C80047BBF9 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				19ED597325AA049F0047BBF9 /* AppDelegate.swift */,
 				19ED597525AA049F0047BBF9 /* SceneDelegate.swift */,
+				19ED5A1525AA54C80047BBF9 /* DatabaseManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19ED597825AA049F0047BBF9 /* ViewController.swift in Sources */,
+				19ED5A1625AA54C80047BBF9 /* DatabaseManager.swift in Sources */,
 				19ED59C125AA0B660047BBF9 /* APIService.swift in Sources */,
 				19ED597425AA049F0047BBF9 /* AppDelegate.swift in Sources */,
 				19ED5A0125AA2C140047BBF9 /* PostsViewController.swift in Sources */,

@@ -16,15 +16,19 @@ class PostsViewController: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   
+  var userData: UserData?
+  
+  private let spinner = UIActivityIndicatorView(style: .medium)
+  private let indicatorText = UILabel()
+  
   fileprivate var posts: [PostData] = []
   fileprivate let postSectionLabel = "Posts"
   fileprivate let navigationBarHeader = "User Info"
   fileprivate let postCellId = "PostDataCellId"
   
-  var userData: UserData?
-  
   override func viewDidLoad() {
     super.viewDidLoad()
+    showLoadingIndicator()
     setupUserInfo()
     retrievePostsData()
     setupViewController()
@@ -39,8 +43,32 @@ class PostsViewController: UIViewController {
       self.posts = posts
       DispatchQueue.main.async {
         self.tableView.reloadData()
+        self.hideLoadingIndicator()
       }
     }
+  }
+  
+  private func showLoadingIndicator() {
+    tableView.isHidden = true
+    spinner.translatesAutoresizingMaskIntoConstraints = false
+    spinner.startAnimating()
+    view.addSubview(spinner)
+    spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    
+    indicatorText.text = "Loading Posts"
+    indicatorText.sizeToFit()
+    indicatorText.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(indicatorText)
+    indicatorText.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    indicatorText.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 30).isActive = true
+  }
+  
+  private func hideLoadingIndicator() {
+    tableView.isHidden = false
+    spinner.stopAnimating()
+    spinner.isHidden = true
+    indicatorText.isHidden = true
   }
   
   private func setupViewController() {

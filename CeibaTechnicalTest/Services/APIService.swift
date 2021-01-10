@@ -7,9 +7,10 @@
 
 import Foundation
 
-class APIService: NSObject {
+class APIService {
   
   private let allUsersURL = "https://jsonplaceholder.typicode.com/users"
+  //Use String format
   private let postsFromUserURL = "https://jsonplaceholder.typicode.com/posts?userId="
   
   func getAllUsers(completion : @escaping ([UserData]) -> ()) {
